@@ -15,29 +15,19 @@ Key Variables:
 pacArray: An array holding the image sources for the PacMan animations.
 pacMen: An array that will contain all PacMan objects currently on the screen.
 Key Functions:
-setToRandom(scale):
+setToRandom(scale): Takes in a scale and returns an object with random values scaled. Example: {x: 33, y: 21}.
 
-Takes in a scale and returns an object with random values scaled. Example: {x: 33, y: 21}.
-makePac():
+makePac(): Creates a PacMan object at a random position with a random velocity. Adds a PacMan image to the game screen. Returns the PacMan's details, including position, velocity, and the image element.
 
-Creates a PacMan object at a random position with a random velocity.
-Adds a PacMan image to the game screen.
-Returns the PacMan's details, including position, velocity, and the image element.
-update():
-
-Loops over each PacMan in the pacMen array.
-Adjusts its position based on its velocity.
+update(): Loops over each PacMan in the pacMen array. Adjusts its position based on its velocity.
 Checks for collisions with the window edges and makes the PacMan bounce if it hits an edge.
 Updates the PacMan's image position in the DOM.
 The function runs repeatedly every 20ms to update the positions of all PacMen.
-checkCollisions(item):
 
-Takes a PacMan object as a parameter.
-Checks if the PacMan has hit any of the window's edges.
+checkCollisions(item): Takes a PacMan object as a parameter. Checks if the PacMan has hit any of the window's edges.
 If it has, the PacMan's velocity is reversed, making it bounce.
-makeOne():
 
-Creates a new PacMan using the makePac() function and adds it to the pacMen array.
+makeOne(): Creates a new PacMan using the makePac() function and adds it to the pacMen array.
 
 **How to play:**
 Click the "Add PacMan" button to add PacMan icons to the screen.
