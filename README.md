@@ -30,6 +30,7 @@ If it has, the PacMan's velocity is reversed, making it bounce.
 makeOne(): Creates a new PacMan using the makePac() function and adds it to the pacMen array.
 
 **How to play:**
+Go to hrfure.github.io/pacmen to see the game in action
 Click the "Add PacMan" button to add PacMan icons to the screen.
 Click the "Start Game" button to make the PacMan icons start moving.
 Watch the PacMen bounce around the screen!
